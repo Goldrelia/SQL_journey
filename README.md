@@ -1,1 +1,3 @@
 # SQL Journey
+
+SQL stuff :)!
