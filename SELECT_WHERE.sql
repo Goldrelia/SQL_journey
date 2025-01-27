@@ -8,4 +8,4 @@
 
 -- Can you get the phone numner for the customer who lives at '259 Ipoh Drive'?
 SELECT phone FROM address
-WHERE address = '259 Ipoh Drive'
+WHERE address = '259 Ipoh Drive';
