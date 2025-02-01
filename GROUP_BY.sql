@@ -6,22 +6,22 @@
 
 SELECT staff_id, COUNT(amount) FROM payment
 GROUP BY staff_id
-ORDER BY SUM(amount) -- do not need but is nice to have
+ORDER BY SUM(amount); -- do not need but is nice to have
 
 
 -- What is the average replacement cost per MPAA rating?
 
 SELECT rating, AVG(replacement_cost) FROM film
-GROUP BY rating
+GROUP BY rating;
 
 -- with round
 -- What is the average replacement cost per MPAA rating?
 
 SELECT rating, ROUND(AVG(replacement_cost), 2) FROM film
-GROUP BY rating
+GROUP BY rating;
 
 -- What are the customer ids of the top 5 customers by total spend?
 SELECT customer_id, SUM(amount) FROM payment
 GROUP BY customer_id
 ORDER BY SUM(amount) DESC
-LIMIT 5
+LIMIT 5;
