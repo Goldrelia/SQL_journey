@@ -7,10 +7,10 @@ SELECT COUNT(*) FROM actor
 WHERE first_name LIKE 'P%';
 
 -- How many unique distrincts are our customers from?
-SELECT COUNT(DISTINCT(district)) FROM address;
+SELECT COUNT(DISTINCT district) FROM address;
 
 -- Retrieve the list of names for those distinct districts from the previous question
-SELECT DISTINCT(district) FROM address;
+SELECT DISTINCT district FROM address;
 
 -- How many films have a rating of R and a replacement cost between $5 and $15?
 SELECT COUNT(*) FROM film

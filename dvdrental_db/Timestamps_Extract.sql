@@ -1,6 +1,6 @@
 -- During which months did payments occur?
 -- Format your answer to return back the full month name
-SELECT DISTINCT(TO_CHAR(payment_date, 'MONTH')) FROM payment
+SELECT DISTINCT TO_CHAR(payment_date, 'MONTH') FROM payment;
 
 -- During which months did payments occur?
 -- Format your answer to return back the full month name
